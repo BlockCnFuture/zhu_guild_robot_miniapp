@@ -7,3 +7,5 @@
 使用了colorui，写的比较乱，凑合看看，权限判断那一块可能有越权风险，我知道，我只是懒
 
 本项目使用 ***Apache License 2.0*** ，修改、二次开发请注明原始版权
+
+![af2f2fb3c28a6e661cdc1282eeb99f31](https://github.com/BlockCnFuture/zhu_guild_robot_miniapp/assets/129872486/3a03e8d0-9188-461a-ad9a-aa35e28da464)
