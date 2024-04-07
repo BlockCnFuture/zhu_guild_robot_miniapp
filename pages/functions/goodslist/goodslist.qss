@@ -1,0 +1,4 @@
+.tab-box{
+    margin-top: 30rpx;
+    height: calc( 100vh - 30rpx );
+}

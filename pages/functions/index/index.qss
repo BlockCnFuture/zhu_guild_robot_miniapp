@@ -1,0 +1,22 @@
+.UCenter-bg {
+  background-size: cover;
+  height: 340rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 0rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.UCenter-bg text {
+  opacity: 0.8;
+}
+
+.fixed-view {
+  background-color: #fff;
+}

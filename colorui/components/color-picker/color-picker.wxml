@@ -1,0 +1,98 @@
+<!-- <view class="cp-mask {{active ? 'active': ''}}" bind:tap="close"></view>
+    <view class="cp-box {{active ? 'active': ''}}"> -->
+
+<view class="cu-modal bottom-modal {{show?'show':''}}" bindtap="close">
+    <view class="cu-dialog" style='max-height: 93%;' catchtap="stopit">
+        <view class="header-view-top">
+            <view class="header-view">
+                <view class="header">
+                    <view></view>
+                </view>
+                <view class="cu-bar bg-white">
+                    <view class="action text-black" catchtap="close">取消</view>
+                    <text class="text-bold text-black text-lg">自定义颜色</text>
+                    <view class="action text-black" catchtap="confirm">确认</view>
+                </view>
+            </view>
+        </view>
+<view style='height:10rpx;'></view>
+        <view class="cp-color-box" style="{{'background:'+('rgb('+bgcolor.r+','+bgcolor.g+','+bgcolor.b+')')+';'}}">
+            <view class="cp-background range-box" data-index="0" catch:touchstart="touchstart" catch:touchmove="touchmove">
+                <view class="cp-color-mask"></view>
+                <view class="cp-pointer" style="{{'top:'+(point[0].top-8+'px')+';'+('left:'+(point[0].left-8+'px')+';')}}"></view>
+            </view>
+        </view>
+
+        <view class="cp-control-box">
+            <view class="cp-control-color">
+                <view class="cp-control-color-content" style="{{'background:'+('rgba('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')')+';'}}"></view>
+            </view>
+            <view class="cp-control-box-item">
+                <view class="cp-controller range-box" data-index="1" catch:touchstart="touchstart" catch:touchmove="touchmove">
+                    <view class="cp-hue">
+                        <view class="cp-circle" style="{{'left:'+(point[1].left-12+'px')+';'}}"></view>
+                    </view>
+                </view>
+                <view class="cp-controller range-box" data-index="2" catch:touchstart="touchstart" catch:touchmove="touchmove">
+                    <view class="cp-transparency" style="{{'background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb('+rgba.r+','+rgba.g+','+rgba.b+'));'}}">
+                        <view class="cp-circle" style="{{'left:'+(point[2].left-12+'px')+';'}}"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="cp-rgb-control-box">
+            <block wx:if="{{mode == 'rgb'}}">
+                <view class="cp-rgb-group">
+                    <view class="cp-rgb">
+                        <view class="cp-rgb-text">R</view>
+                        <view class="cp-rgb-box range-box" data-index="3" catch:touchstart="touchstart" catch:touchmove="touchmove">
+                            <view class="cp-rgb-line cp-rgb-r">
+                                <view class="cp-circle" style="{{'left:'+(point[3].left-12+'px')+';'}}"></view>
+                            </view>
+                        </view>
+                        <view class="cp-rgb-value">{{rgba.r}}</view>
+                    </view>
+                    <view class="cp-rgb">
+                        <view class="cp-rgb-text">G</view>
+                        <view class="cp-rgb-box range-box" data-index="4" catch:touchstart="touchstart" catch:touchmove="touchmove">
+                            <view class="cp-rgb-line cp-rgb-g">
+                                <view class="cp-circle" style="{{'left:'+(point[4].left-12+'px')+';'}}"></view>
+                            </view>
+                        </view>
+                        <view class="cp-rgb-value">{{rgba.g}}</view>
+                    </view>
+                    <view class="cp-rgb">
+                        <view class="cp-rgb-text">B</view>
+                        <view class="cp-rgb-box range-box" data-index="5" catch:touchstart="touchstart" catch:touchmove="touchmove">
+                            <view class="cp-rgb-line cp-rgb-b">
+                                <view class="cp-circle" style="{{'left:'+(point[5].left-12+'px')+';'}}"></view>
+                            </view>
+                        </view>
+                        <view class="cp-rgb-value">{{rgba.b}}</view>
+                    </view>
+                </view>
+            </block>
+            <block wx:else>
+                <view class="cp-hex-box">
+                    <view class="cp-hex-box-input">{{hex}}</view>
+                    <view class="cp-hex-box-text">HEX</view>
+                </view>
+            </block>
+
+            <view class="cp-change" catch:tap="changeMode">
+                <view class="cp-change-button">
+                    <text decode="true" class="cp-change-text">切换显示</text>
+                </view>
+            </view>
+        </view>
+        <view class="cp-option">
+            <block wx:for="{{colorList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+                <view class="cp-option-item">
+                    <view class="cp-option-item-content" data-color="{{item}}" style="{{'background:'+('rgba('+item.r+','+item.g+','+item.b+','+item.a+')')+';'}}" catch:tap="selectColor"></view>
+                </view>
+            </block>
+            <view style='height:6vh;'></view>
+        </view>
+    </view>
+</view>

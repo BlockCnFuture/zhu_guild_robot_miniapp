@@ -1,0 +1,77 @@
+{
+	"projectid": "1112299180_%E5%88%9D%E9%81%87%E5%B0%8F%E7%AB%B9",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": true,
+		"nodeModules": true,
+		"uploadWithSourceMap": true,
+		"uglifyFileName": true,
+		"remoteDebugLogEnable": false,
+		"prefetch": false
+	},
+	"compileType": "miniprogram",
+	"createTime": 1684376643714,
+	"accessTime": 1684376643714,
+	"packOptions": {
+		"ignore": []
+	},
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"qqappid": "1112299180",
+	"projectname": "%E5%88%9D%E9%81%87%E5%B0%8F%E7%AB%B9",
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"plugin": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "光萌词汇中心测试",
+					"pathName": "pages/lightcute/keywords/keywords",
+					"query": "guildID=6259864134638097991&i=1694318350754",
+					"scene": ""
+				},
+				{
+					"id": 1,
+					"name": "带频道号编译",
+					"pathName": "pages/functions/index/index",
+					"query": "guildID=6259864134638097991",
+					"scene": ""
+				},
+				{
+					"id": 2,
+					"name": "值班室测试",
+					"pathName": "pages/functions/officetasks/officetasks",
+					"query": "guildID=6259864134638097991&i=12",
+					"scene": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,5 @@
+<view class="custom-textarea">
+  <text class="text-view" qq:if="{{!showTextarea}}" bindtap="showTextareaView">{{value || placeholder}}<text class="tips-view" qq:if="{{!showTextarea}}">双击进入编辑状态</text></text>
+  <textarea class="textarea" qq:if="{{showTextarea}}" bindblur="hideTextarea" bindinput="handleInput" placeholder="{{placeholder}}" value="{{value}}" cursor-spacing="80" show-confirm-bar="{{false}}" maxlength="{{maxlength}}"></textarea>
+  <text class="cnt-view" qq:if="{{showTextarea}}">{{valuelength}}/{{maxlength}}</text>
+</view>

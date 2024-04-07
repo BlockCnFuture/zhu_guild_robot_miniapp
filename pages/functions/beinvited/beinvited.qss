@@ -1,0 +1,5 @@
+blockquote {
+  border-left: 2px solid #ccc;
+  margin: 0;
+  padding-left: 1em;
+}

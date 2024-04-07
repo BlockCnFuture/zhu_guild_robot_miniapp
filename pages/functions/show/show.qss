@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.body {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    color: #1e1f20;
+    transform: scale(1.5);
+    transform-origin: 0 0;
+}
+
+.container {
+    font-family: sans-serif;
+    color: #1e1f20;
+    width: 100vw;
+    padding: 20px 15px 10px 15px;
+    background-color: #f5f6fb;
+}
+
+.img_box {
+    border-radius: 15px 15px 15px 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+    position: relative;
+    width: 100%;
+}
+
+.text_box {
+    border-radius: 15px 15px 15px 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 1.4;
+    background-color: #000000;
+    padding: 15px 15px 15px 15px;
+    word-break: break-all;
+    font-size: 20px;
+    color: #7994a7;
+}
+
+.reason_box {
+    border-radius: 15px 15px 15px 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 1.0;
+    background-color: #ff0000;
+    padding: 15px 15px 15px 15px;
+    word-break: break-all;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.log_box {
+    border-radius: 15px 15px 15px 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 1.0;
+    background-color: #808000;
+    padding: 5px 15px 5px 15px;
+    word-break: break-all;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.roles_box {
+    border-radius: 15px 15px 15px 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 1.4;
+    padding: 3px 3px 3px 3px;
+    word-break: break-all;
+}
+
+.poster {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.poster > .head {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.poster > .nick {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 16px;
+    color: #ff0000;
+}
+
+.poster > .time {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 16px;
+    color: #808080;
+}
+
+.logo {
+    font-size: 14px;
+    text-align: center;
+    color: #7994a7;
+}
