@@ -8,6 +8,8 @@
 
 本项目使用 ***Apache License 2.0*** ，修改、二次开发必须注明原始版权
 
+配套后端/机器人源代码：[https://github.com/BlockCnFuture/zhu_guild_robot/tree/main](https://github.com/BlockCnFuture/zhu_guild_robot/tree/main)
+
 ![af2f2fb3c28a6e661cdc1282eeb99f31](https://github.com/BlockCnFuture/zhu_guild_robot_miniapp/assets/129872486/3a03e8d0-9188-461a-ad9a-aa35e28da464)
 
 ![ac41701d92a13a43baa6eea9f23b263a](https://github.com/BlockCnFuture/zhu_guild_robot_miniapp/assets/129872486/48399599-2bb8-4837-af9c-0b006579e21c)
