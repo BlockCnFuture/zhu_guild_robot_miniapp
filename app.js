@@ -4,7 +4,7 @@ App({
     this.globalData = {
       ...this.globalData,
       online: online,
-      host: (online ? 'https://feng.7yan.top/Api' : 'https://127.0.0.1/Api'),
+      host: (online ? 'https://a.b.c/Api' : 'https://127.0.0.1/Api'),
       open_guild_id: '',
       adminguildid: '647046823986013702',
       userinfo: {
